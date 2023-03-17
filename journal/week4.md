@@ -43,6 +43,7 @@ sed allows us to manipulate database
 `NO_DB_CONNECTION_URL=$(sed 's/\/cruddur//g' <<<"$CONNECTION_URL")`
 
 create table, insert data
-image.png
+![image](https://user-images.githubusercontent.com/96145786/226002346-b3bafb8a-01c6-403b-8854-3a471f6fd1fd.png)
 
-image.png
+
+![image](https://user-images.githubusercontent.com/96145786/226002261-c52540e3-72a0-4a76-b629-a73207fefa88.png)
