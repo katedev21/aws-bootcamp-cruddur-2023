@@ -29,19 +29,20 @@ DELETE FROM table_name WHERE condition; -- Delete data from a table
 ```
 
 The command to import:
-
 `psql cruddur < db/schema.sql -h localhost -U postgres`
 
-Get into postgres without re typing credentials
-`postgres://postgres:password@localhost:5432/cruddur`
+Get into postgres without re typing credentials in terminal
+`psql postgresql://postgres:password@localhost:5432/cruddur`
 
-`export CONNECTION_URL="postgres://postgres:password@localhost:5432/cruddur"`
+`export CONNECTION_URL="postgresql://postgres:password@localhost:5432/cruddur"`
 
-for fast access into env
+for fast access into postgres, type this into terminal outside of postgres shell  under backend-flask folder directory
 `psql $CONNECTION_URL`
 
 sed allows us to manipulate database
 `NO_DB_CONNECTION_URL=$(sed 's/\/cruddur//g' <<<"$CONNECTION_URL")`
 
+create table, insert data
+image.png
 
-
+image.png
