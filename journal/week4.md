@@ -48,3 +48,19 @@ create table, insert data
 
 
 ![image](https://user-images.githubusercontent.com/96145786/226002261-c52540e3-72a0-4a76-b629-a73207fefa88.png)
+
+
+Easy setup everything for our database
+```
+#! /usr/bin/bash
+-e # stop if it fails at any point
+
+#echo "==== db-setup"
+
+bin_path="$(realpath .)/bin"
+
+source "$bin_path/db-drop"
+source "$bin_path/db-create"
+source "$bin_path/db-schema-load"
+source "$bin_path/db-seed"
+```
